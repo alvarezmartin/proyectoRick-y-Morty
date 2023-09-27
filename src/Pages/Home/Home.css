@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.principal-search{
+    height: 100vh;
+}
+  
+.container-header{
+  background-color: #ffffffe6;
+  height: 600px;
+  width: 600px;
+}
+  
+
+h1{
+  font-weight: 500;
+}
+
+p{
+    font-weight: 400;
+}
+
+.botonesHome{
+    background-color: #344d67!important;
+    color: #6eccaf!;
+}
+
+.botonesHome:hover{
+    background-color: #6eccaf!important;
+    color: #344d67!important;
+}
