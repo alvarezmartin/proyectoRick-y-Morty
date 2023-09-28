@@ -27,6 +27,7 @@ body{
   background-attachment: fixed;
 }
 
+
 .form-switch{
   background-color: #344d67;
   color: #6eccaf;
@@ -42,15 +43,24 @@ body{
   background-color: #223142;
 }
 
+ul{
+  margin-top: 0;
+}
+
 .btn-active{
   background-color: #6eccaf;
   color: #344d67!important;
 }
 
-.btn-active:hover{
-  background-color: #6eccaf;
+.botones{
+  background-color: #344d67!important;
+}
+
+.botones:hover,.btn-active:hover{
+  background-color: #6eccaf!important;
   color: #344d67!important;
 }
+
 
 .navbar-brand {
   padding: 40px 80px;
@@ -66,6 +76,10 @@ img,svg{
 
 h1,h2,p{
   color: #344d67;
+}
+
+.name-card {
+  color: #6eccaf;
 }
 
 .main-contact-div {
@@ -97,12 +111,17 @@ textarea{
   background-color: initial!important;
   color: #f5f5f5!important;
   font-size: 1.2rem;
+  border: var(--bs-list-group-border-width) solid rgba(0, 0, 0, 0.125);
 }
 
 .fila:hover{
   background-color: #6eccaf!important;
   color: #344d67!important;
   cursor: pointer;
+}
+
+.collapse:not(.show){
+  display: flex;
 }
 
 
@@ -131,12 +150,25 @@ h2{
 }}
 
 @media (max-width: 800px){
+.filters {
+    flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}}
+
+@media (max-width: 800px){
 .filters-area {
     background-color: #344d67;
     border-radius: 8px;
     justify-content: space-around;
     padding: 15px;
     width: 90%;
+}}
+
+@media (max-width: 500px){
+.card {
+    flex-direction: column!important;
 }}
 
 @media (max-width: 800px){

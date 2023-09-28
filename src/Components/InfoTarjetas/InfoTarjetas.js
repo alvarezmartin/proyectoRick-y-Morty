@@ -15,10 +15,8 @@ export default function InfoTarjetas({status,especie,origen,genero,setShow}){
                     <span className="fw-bold">{especie}</span>
                 </li>
                 <li className="fila list-group-item p-3 d-flex flex-column">
-                    <span>
-                        Origin:
-                        <span className="fw-bold">{origen}</span>
-                    </span>
+                    Origin:
+                    <span className="fw-bold">{origen}</span>
                 </li>
                 <li className="fila list-group-item p-3 d-flex flex-column">
                     Gender:

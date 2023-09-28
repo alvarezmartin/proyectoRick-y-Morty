@@ -82,12 +82,12 @@ export default function Characters(){
     return(
         <Fragment>
             <NavBar itemMenu={itemMenu}/>
-            <section className='row section-filters py-5'>
+            <section className='row section-filters py-5 px-2'>
                 <div className='filters-area d-flex  m-2 align-items-center'>
                     <h2>Filters</h2>
                     <a className="btn btn-filters" data-bs-toggle="collapse" href="#collapseFilters" role="button" aria-expanded="true" aria-controls="collapseFilters"><img src="../assets/filter-icon.svg"/></a>
                 </div>
-                <form id='collapseFilters' className="d-flex flex-wrap justify-content-between collapse">
+                <form id='collapseFilters' className="filters justify-content-between flex-wrap collapse">
                     {filtros.map((item)=>{return <Filter key={item.nombre} valorFiltro={item.filtro} idFiltro={item.nombre} handlerChange={aplicarFiltros}/>})}
                 </form>
             </section>
